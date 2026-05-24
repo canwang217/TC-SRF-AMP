@@ -1,0 +1,7 @@
+input=C:\Users\ALIENWARE\Desktop\Project\XJTLU-Software\code\iGEM_2026\phase _1\peptides_unique.fasta
+train=2003080
+valid=10117
+skipped=0
+seed=42
+min_len=11
+max_len=50

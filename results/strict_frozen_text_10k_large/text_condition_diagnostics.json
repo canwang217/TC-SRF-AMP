@@ -1,0 +1,194 @@
+{
+  "checkpoint": "checkpoints/tc_srf_amp_strict_frozen_text_10k/tc_srf_amp_finetune_last_.pth",
+  "load_mode": "ema",
+  "device": "cuda:0",
+  "strict_pdf_path": {
+    "attribute_ids_supplied": false,
+    "label_ids_supplied": false,
+    "uses_text_encoder": true,
+    "uses_token_condition_Tc": true,
+    "uses_global_condition_cg": true
+  },
+  "text_condition_report": {
+    "active_short_highpos": {
+      "prompt": "activity: active; target: unknown; length_bin: short; charge: high_positive; kr_ratio: high; hydrophobicity: medium; cys: none; toxicity: unknown",
+      "global_norm": 2.412670135498047,
+      "token_mean_norm": 0.7469068765640259
+    },
+    "active_long_negative": {
+      "prompt": "activity: active; target: unknown; length_bin: long; charge: negative; kr_ratio: low; hydrophobicity: medium; cys: none; toxicity: unknown",
+      "global_norm": 2.3937299251556396,
+      "token_mean_norm": 0.6850642561912537
+    },
+    "active_medium_hydrophobic": {
+      "prompt": "activity: active; target: unknown; length_bin: medium; charge: positive; kr_ratio: medium; hydrophobicity: high; cys: none; toxicity: unknown",
+      "global_norm": 2.452831745147705,
+      "token_mean_norm": 0.6617719531059265
+    },
+    "inactive_long_neutral": {
+      "prompt": "activity: inactive; target: unknown; length_bin: long; charge: neutral; kr_ratio: low; hydrophobicity: medium; cys: none; toxicity: unknown",
+      "global_norm": 2.4255716800689697,
+      "token_mean_norm": 0.7223235964775085
+    }
+  },
+  "text_pair_report": [
+    {
+      "left": "active_short_highpos",
+      "right": "active_long_negative",
+      "global_cosine": 0.999463,
+      "token_mean_cosine": 0.322471
+    },
+    {
+      "left": "active_short_highpos",
+      "right": "active_medium_hydrophobic",
+      "global_cosine": 0.999619,
+      "token_mean_cosine": 0.698265
+    },
+    {
+      "left": "active_short_highpos",
+      "right": "inactive_long_neutral",
+      "global_cosine": 0.999359,
+      "token_mean_cosine": 0.213942
+    },
+    {
+      "left": "active_long_negative",
+      "right": "active_medium_hydrophobic",
+      "global_cosine": 0.999424,
+      "token_mean_cosine": 0.599335
+    },
+    {
+      "left": "active_long_negative",
+      "right": "inactive_long_neutral",
+      "global_cosine": 0.999807,
+      "token_mean_cosine": 0.875501
+    },
+    {
+      "left": "active_medium_hydrophobic",
+      "right": "inactive_long_neutral",
+      "global_cosine": 0.999367,
+      "token_mean_cosine": 0.479229
+    }
+  ],
+  "vector_report": {
+    "active_short_highpos": {
+      "cosine_vs_null": 0.989371,
+      "relative_delta_vs_null": 0.145425,
+      "vector_norm": 67.940185546875,
+      "token_only_cosine_vs_null": 0.991725,
+      "token_only_relative_delta_vs_null": 0.128525,
+      "global_only_cosine_vs_null": 0.999057,
+      "global_only_relative_delta_vs_null": 0.043459,
+      "full_vs_token_only_cosine": 0.999321,
+      "full_vs_global_only_cosine": 0.992662
+    },
+    "active_long_negative": {
+      "cosine_vs_null": 0.999396,
+      "relative_delta_vs_null": 0.034745,
+      "vector_norm": 68.71548461914062,
+      "token_only_cosine_vs_null": 0.9994,
+      "token_only_relative_delta_vs_null": 0.034714,
+      "global_only_cosine_vs_null": 0.999152,
+      "global_only_relative_delta_vs_null": 0.041213,
+      "full_vs_token_only_cosine": 0.99946,
+      "full_vs_global_only_cosine": 0.999155
+    },
+    "active_medium_hydrophobic": {
+      "cosine_vs_null": 0.997061,
+      "relative_delta_vs_null": 0.076623,
+      "vector_norm": 68.4734115600586,
+      "token_only_cosine_vs_null": 0.999283,
+      "token_only_relative_delta_vs_null": 0.03791,
+      "global_only_cosine_vs_null": 0.999042,
+      "global_only_relative_delta_vs_null": 0.043807,
+      "full_vs_token_only_cosine": 0.998984,
+      "full_vs_global_only_cosine": 0.999011
+    },
+    "inactive_long_neutral": {
+      "cosine_vs_null": 0.998816,
+      "relative_delta_vs_null": 0.048668,
+      "vector_norm": 68.6269302368164,
+      "token_only_cosine_vs_null": 0.999211,
+      "token_only_relative_delta_vs_null": 0.039719,
+      "global_only_cosine_vs_null": 0.999126,
+      "global_only_relative_delta_vs_null": 0.041814,
+      "full_vs_token_only_cosine": 0.999104,
+      "full_vs_global_only_cosine": 0.99931
+    }
+  },
+  "vector_pair_report": [
+    {
+      "left": "active_short_highpos",
+      "right": "active_long_negative",
+      "vector_cosine": 0.989171,
+      "relative_delta": 0.146766
+    },
+    {
+      "left": "active_short_highpos",
+      "right": "active_medium_hydrophobic",
+      "vector_cosine": 0.996239,
+      "relative_delta": 0.086741
+    },
+    {
+      "left": "active_short_highpos",
+      "right": "inactive_long_neutral",
+      "vector_cosine": 0.9901,
+      "relative_delta": 0.140364
+    },
+    {
+      "left": "active_long_negative",
+      "right": "active_medium_hydrophobic",
+      "vector_cosine": 0.997092,
+      "relative_delta": 0.076479
+    },
+    {
+      "left": "active_long_negative",
+      "right": "inactive_long_neutral",
+      "vector_cosine": 0.999533,
+      "relative_delta": 0.030617
+    },
+    {
+      "left": "active_medium_hydrophobic",
+      "right": "inactive_long_neutral",
+      "vector_cosine": 0.997766,
+      "relative_delta": 0.066798
+    }
+  ],
+  "generation_summary": {
+    "active_short_highpos": {
+      "length": 9.9766,
+      "net_charge": 5.0742,
+      "kr_frac": 0.5408,
+      "hydrophobic_frac": 0.3478,
+      "cys_count": 0.0566,
+      "n": 1024,
+      "unique": 1020
+    },
+    "active_long_negative": {
+      "length": 37.9834,
+      "net_charge": -8.1357,
+      "kr_frac": 0.0443,
+      "hydrophobic_frac": 0.4051,
+      "cys_count": 0.0283,
+      "n": 1024,
+      "unique": 1024
+    },
+    "active_medium_hydrophobic": {
+      "length": 20.4014,
+      "net_charge": 4.8486,
+      "kr_frac": 0.2711,
+      "hydrophobic_frac": 0.4653,
+      "cys_count": 0.2871,
+      "n": 1024,
+      "unique": 1024
+    },
+    "inactive_long_neutral": {
+      "length": 37.0039,
+      "net_charge": -3.9102,
+      "kr_frac": 0.046,
+      "hydrophobic_frac": 0.4624,
+      "cys_count": 0.0459,
+      "n": 1024,
+      "unique": 1024
+    }
+  }
+}

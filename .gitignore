@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and experiment outputs
+*.log
+runs/
+wandb/
+generated_seqs/
+prot_flow/generated_seqs/
+prot_flow/runs/
+
+# Large model and dataset artifacts. Download these from Hugging Face.
+*.pth
+*.bin
+*.safetensors
+*.jsonl
+*.fasta
+esm2_t12_35M_UR50D/
+scibert_scivocab_uncased/
+prot_flow/checkpoints/
+
+# Keep the small public length-prior/reference files needed for lightweight demos.
+!prot_flow/data/peptides_pretrain/valid.fasta
+!prot_flow/data/peptides_pretrain/stats.txt
+!prot_flow/data/peptides_pretrain/encodings-esm2-35M-mean.pt
+!prot_flow/data/peptides_pretrain/encodings-esm2-35M-std.pt
+!prot_flow/data/peptides_pretrain/encodings-esm2-35M-min.pt
+!prot_flow/data/peptides_pretrain/encodings-esm2-35M-max.pt
+

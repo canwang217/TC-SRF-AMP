@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "TC-SRF-AMP: Text-Conditioned Semantic Rectified Flow for Controllable Antimicrobial Peptide Generation"
+message: "If you use this code, please cite the repository. A manuscript citation will be added when available."
+type: software
+authors:
+  - family-names: Qiu
+    given-names: Shi
+repository-code: "https://github.com/canwang217/TC-SRF-AMP"
+url: "https://github.com/canwang217/TC-SRF-AMP"
+date-released: "2026-05-25"
+license: MIT
