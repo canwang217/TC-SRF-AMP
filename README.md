@@ -51,7 +51,7 @@ The script prints the parsed structured prompt, generation summary, example sequ
 
 TC-SRF-AMP generates peptides in a compressed ESM-2 semantic latent space. A peptide sequence is encoded by ESM-2 and compressed into latent tokens. Rectified flow matching learns a vector field between Gaussian noise and the compressed peptide latent. During generation, the learned vector field is integrated under text control, then decompressed and decoded back into an amino-acid sequence.
 
-Text conditioning follows the PDF-style route:
+Text conditioning follows the TC-SRF-AMP route:
 
 - SciBERT encodes the prompt.
 - A token projector produces token-level condition `T_c`.
