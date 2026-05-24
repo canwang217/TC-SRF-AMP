@@ -36,11 +36,11 @@ prot_flow/checkpoints/tc_srf_amp_strict_frozen_text_10k/tc_srf_amp_finetune_last
 
 ## Dataset
 
-The phase 1 ensemble dataset is included directly in this repository under `data/phase_1/`:
+The phase 1 ensemble dataset is included directly in this repository under `data/`:
 
 ```text
-data/phase_1/ensemble_train.jsonl
-data/phase_1/ensemble_test.jsonl
+data/ensemble_train.jsonl
+data/ensemble_test.jsonl
 ```
 
 To obtain the dataset, clone this repository:
@@ -56,7 +56,7 @@ The files are newline-delimited JSON (`.jsonl`), with one record per line. They 
 import json
 from pathlib import Path
 
-dataset_path = Path("data/phase_1/ensemble_train.jsonl")
+dataset_path = Path("data/ensemble_train.jsonl")
 with dataset_path.open("r", encoding="utf-8") as handle:
     first_record = json.loads(next(handle))
 ```
@@ -153,7 +153,7 @@ The strongest controls are length, charge direction, KR fraction, and cysteine s
 
 ```text
 assets/figures/      Framework figures used in this README
-data/phase_1/        Public phase 1 train/test JSONL dataset
+data/                Public phase 1 train/test JSONL dataset
 docs/                Reproducibility and method notes
 prot_flow/           Core model, training, generation, and evaluation code
 results/             JSON/CSV summaries from reported evaluations

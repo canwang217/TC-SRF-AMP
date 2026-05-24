@@ -30,9 +30,8 @@ prot_flow/checkpoints/
 
 # Public phase 1 dataset files included with this repository.
 !data/
-!data/phase_1/
-!data/phase_1/ensemble_train.jsonl
-!data/phase_1/ensemble_test.jsonl
+!data/ensemble_train.jsonl
+!data/ensemble_test.jsonl
 
 # Keep the small public length-prior/reference files needed for lightweight demos.
 !prot_flow/data/peptides_pretrain/valid.fasta
