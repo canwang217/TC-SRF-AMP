@@ -28,6 +28,12 @@ esm2_t12_35M_UR50D/
 scibert_scivocab_uncased/
 prot_flow/checkpoints/
 
+# Public phase 1 dataset files included with this repository.
+!data/
+!data/phase_1/
+!data/phase_1/ensemble_train.jsonl
+!data/phase_1/ensemble_test.jsonl
+
 # Keep the small public length-prior/reference files needed for lightweight demos.
 !prot_flow/data/peptides_pretrain/valid.fasta
 !prot_flow/data/peptides_pretrain/stats.txt
@@ -35,4 +41,3 @@ prot_flow/checkpoints/
 !prot_flow/data/peptides_pretrain/encodings-esm2-35M-std.pt
 !prot_flow/data/peptides_pretrain/encodings-esm2-35M-min.pt
 !prot_flow/data/peptides_pretrain/encodings-esm2-35M-max.pt
-
