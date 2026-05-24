@@ -152,9 +152,9 @@ The current release reports sequence-derived physicochemical controls. It does n
 The manuscript is in preparation. For now, cite this repository:
 
 ```bibtex
-@software{qiu2026tcsrfamp,
+@software{Wang2026tcsrfamp,
   title = {TC-SRF-AMP: Text-Conditioned Semantic Rectified Flow for Controllable Antimicrobial Peptide Generation},
-  author = {Qiu, Shi},
+  author = {Can, Wang},
   year = {2026},
   url = {https://github.com/canwang217/TC-SRF-AMP}
 }
