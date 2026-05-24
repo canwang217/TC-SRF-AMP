@@ -12,8 +12,6 @@ The reported strict path uses text-derived token and global conditions only. Dir
 
 ![TC-SRF-AMP overview](assets/figures/tc_srf_amp_overview.png)
 
-![Conditional FM holder](assets/figures/conditional_fm_holder.png)
-
 ## Model Assets
 
 Large checkpoints, pretrained encoder weights, and full retraining data are hosted on Hugging Face:
